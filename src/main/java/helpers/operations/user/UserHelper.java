@@ -11,12 +11,11 @@ public class UserHelper extends BaseAPIHelper {
 
     final static RequestSpecification requestSpecification = setUpSpec("/accounts/");
 
-    public static Response changePassword(Object token, JSONObject body) {
+    public static Response changePassword(String email) {
         return given()
                 .spec(requestSpecification)
-                .body(body.toString())
-                .header("Authorization", "Bearer " + token)
-                .put("current/change-password");
+                .queryParam("email", email)
+                .get("current/change-password");
     }
 
 }

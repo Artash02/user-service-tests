@@ -1,0 +1,12 @@
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\operations\user\UserHelper.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\flows\OnboardingFlows.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\operations\onboarding\payloads\AddUserInfoBody.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\BaseAPIHelper.java
+C:\Projects\project_new\user-service-tests\src\main\java\utils\APIClient.java
+C:\Projects\project_new\user-service-tests\src\main\java\utils\APIException.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\operations\onboarding\OnboardingHelper.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\operations\onboarding\payloads\UserEnableBody.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\DBHelper.java
+C:\Projects\project_new\user-service-tests\src\main\java\helpers\operations\testingendpoints\TokenHelper.java
+C:\Projects\project_new\user-service-tests\src\main\java\utils\TestRails.java
+C:\Projects\project_new\user-service-tests\src\main\java\utils\TestUtils.java

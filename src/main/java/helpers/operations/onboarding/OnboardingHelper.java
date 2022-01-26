@@ -18,10 +18,24 @@ public class OnboardingHelper extends BaseAPIHelper {
                 .post("register");
     }
 
+    public static Response userEnable(JSONObject payload) {
+        return given()
+                .spec(requestSpecification)
+                .body(payload.toString())
+                .post("enable");
+    }
+
     public static Response userInfoSubmit(JSONObject payload) {
         return given()
                 .spec(requestSpecification)
                 .body(payload.toString())
                 .post("info");
+    }
+
+    public static Response userPhoneAdding(JSONObject payload){
+        return given()
+                .spec(requestSpecification)
+                .body(payload.toString())
+                .post("phone");
     }
 }

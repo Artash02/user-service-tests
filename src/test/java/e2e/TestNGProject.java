@@ -26,8 +26,8 @@ public class TestNGProject {
         client = new APIClient("https://estateguru.testrail.io/");
         client.setUser("hayk.harutyunyan@estateguru.co");
         client.setPassword("Aa123456");
-        JSONObject c = (JSONObject) client.sendGet("get_suite/1");
-        System.out.println(c.get("title"));
+        JSONObject c = new JSONObject(client.sendGet("get_projects"));
+        System.out.println(c);
     }
 
     @BeforeMethod

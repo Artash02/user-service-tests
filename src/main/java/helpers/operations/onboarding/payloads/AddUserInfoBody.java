@@ -15,17 +15,17 @@ public class AddUserInfoBody {
     public static final String CONTACT_COUNTRY = "contactCountry";
     public static final String CONTACT_ADDRESS = "contactAddress";
 
-    public enum KeyCombinations {
-        REQUIRED,
-        ALL_FIELDS
-    }
+//    public enum KeyCombinations {
+//        REQUIRED,
+//        ALL_FIELDS
+//    }
 
-    public static JSONObject bodyBuilder() {
+    public static JSONObject bodyBuilder(String email) {
         final JSONObject body = new JSONObject();
-        body.put(USERNAME, "hayk.harutyunyan+1@estateguru.co");
-        body.put(FIRST_NAME, "first_name_test");
-        body.put(LAST_NAME, "lastnmaefeef");
-        body.put(COUNTRY, "Estonia");
+        body.put(USERNAME, email);
+        body.put(FIRST_NAME, "Pivazyan");
+        body.put(LAST_NAME, "Vardan");
+        body.put(COUNTRY, "Armenia");
         body.put(CITIZENSHIP, "Estonia");
         body.put(FULL_ADDRESS, "citizwef");
         body.put(CONTACT_COUNTRY, "Estonia");
@@ -33,25 +33,25 @@ public class AddUserInfoBody {
         return body;
     }
 
-    public static JSONObject bodyBuilder(KeyCombinations keyCombinations) {
-
-        final JSONObject body = new JSONObject();
-        switch (keyCombinations) {
-            case REQUIRED:
-                break;
-            case ALL_FIELDS:
-                break;
-        }
-        body.put(USERNAME, "hayk.harutyunyan+1@estateguru.co");
-        body.put(FIRST_NAME, "first_name_test");
-        body.put(LAST_NAME, "lastnmaefeef");
-        body.put(COUNTRY, "Estonia");
-        body.put(CITIZENSHIP, "Estonia");
-        body.put(FULL_ADDRESS, "citizwef");
-        body.put(CONTACT_COUNTRY, "Estonia");
-        body.put(CONTACT_ADDRESS, "country");
-        return body;
+//    public static JSONObject bodyBuilder(KeyCombinations keyCombinations) {
+//
+//        final JSONObject body = new JSONObject();
+//        switch (keyCombinations) {
+//            case REQUIRED:
+//                break;
+//            case ALL_FIELDS:
+//                break;
+//        }
+//        body.put(USERNAME, "hayk.harutyunyan+1@estateguru.co");
+//        body.put(FIRST_NAME, "first_name_test");
+//        body.put(LAST_NAME, "lastnmaefeef");
+//        body.put(COUNTRY, "Estonia");
+//        body.put(CITIZENSHIP, "Estonia");
+//        body.put(FULL_ADDRESS, "citizwef");
+//        body.put(CONTACT_COUNTRY, "Estonia");
+//        body.put(CONTACT_ADDRESS, "country");
+//        return body;
     }
-}
+
 
 

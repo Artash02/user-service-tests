@@ -54,9 +54,9 @@ public class APIClient {
         return this.sendRequest("GET", uri, data);
     }
 
-    public Object sendGet(String uri)
+    public JSONObject sendGet(String uri)
             throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("GET", uri, null);
+        return (JSONObject) sendRequest("GET", uri, null);
     }
 
     public Object sendPost(String uri, Object data)

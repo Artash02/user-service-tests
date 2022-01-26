@@ -7,7 +7,7 @@ import static io.restassured.http.ContentType.JSON;
 
 public class BaseAPIHelper {
 
-    static final String BASE_URI = "https://user.staging.estateguru.co/api";
+    public static final String BASE_URI = "https://user.staging.estateguru.co/api";
 
     public static RequestSpecification setUpSpec(String basePath) {
         return new RequestSpecBuilder()

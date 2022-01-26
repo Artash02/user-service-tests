@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 2.817 sec <<< FAILURE!
+invalidLogin(e2e.TestNGProject)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at e2e.TestNGProject.invalidLogin(TestNGProject.java:53)
+
+afterTest(e2e.TestNGProject)  Time elapsed: 0.499 sec  <<< FAILURE!
+utils.APIException: TestRail API returned HTTP 400("Field :run_id is not a valid ID.")
+	at utils.APIClient.sendRequest(APIClient.java:197)
+	at utils.APIClient.sendPost(APIClient.java:64)
+	at e2e.TestNGProject.afterTest(TestNGProject.java:68)
+
